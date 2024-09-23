@@ -3,7 +3,6 @@ const express = require('express');
 const app = express();
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 const cors = require('cors');
-const functions = require("firebase-functions")
 
 app.use(express.json());
 app.use(cors());
@@ -51,4 +50,3 @@ app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
 
-exports.api= functions.https.onRequest(app)
