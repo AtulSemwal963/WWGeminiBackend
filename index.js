@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 // Google Generative AI setup
-const API_KEY = "AIzaSyDlpqIqg9-3L6wACVBx5UtB9Q-Ol_3V2nI";  // Replace with your actual API key
+const API_KEY = "AIzaSyCYfYGNtINK1NnyZQdSse8kPaQwosrtXJE";  // Replace with your actual API key
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 const chat = model.startChat({ history: [] }); // Empty history for now
